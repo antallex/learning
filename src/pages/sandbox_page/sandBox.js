@@ -1,13 +1,21 @@
-import BigProjButton from '../../components/Buttons/BigProjButton/BigProjButton'
+import FirstPageCard from '../../components/Buttons/BigProjButton/BigProjButton';
+import NavBar from '../../components/NavBar/NavBar';
 
 function SandBox() {
   return (
-    <div className='h-screen w-full bg-background-dark'>
-    <div className='h-full items-center sm:flex sm:justify-around'>
-      <BigProjButton title='Components' link='/components' />
-      <BigProjButton  title='Monsters Projects' link='/monsters'/>
+    <div className="h-screen  w-full ">
+      <NavBar />
+      <div className="h-full w-full flex justify-center items-center text-center">
+      <div className="w-10/12 h-2/5 gap-10 grid grid-cols-1 sm:grid-cols-2 text-center">
+      
+       <FirstPageCard title="Components" to="/components" />
+       <FirstPageCard title="Will be continued..." to="/" />
+        
+      
+       
+      </div>
+      </div>
     </div>
-  </div>
   );
 }
 

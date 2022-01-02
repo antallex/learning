@@ -5,7 +5,7 @@ module.exports = {
     colors: {
 
       //light-colors
-      'primary': '#6200EE',
+      'primary': '#25A1B0',
       'primary-900': '#3700B3',
       'secondary' : '#03DAC6',
       'secondary-variant' : '#018786',
@@ -25,8 +25,8 @@ module.exports = {
       'white' : '#fff',
 
       //dark-colors
-      'primary-dark': '#BB86FC',
-      'primary-900-dark': '#3700B3',
+      'primary-dark': '#75D9E8',
+      'primary-900-dark': '#37CADF',
       'secondary-dark' : '#03DAC6',
       'secondary-variant-dark' : '#03DAC6',
       'gray-500-dark': '#595959',

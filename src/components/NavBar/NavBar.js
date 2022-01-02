@@ -1,27 +1,34 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import Logo from "../../images/svg/logo_blue.svg";
+import SubmitButtonNav from "../Buttons/Submit/SubmitButtonNav";
 
 function NavBar() {
   return (
-    <div className='w-full h-24 px-16 bg-surface-dark text-center items-center flex justify-between'>
-      <div>
-        <NavLink to='/' className='text-on-surface-dark text-xl mx-4 hover:text-primary-dark'>
-         Antalex
-        </NavLink>
-      </div>
-      <div className=''>
-
-        <NavLink
-          to='/components'
-          className='text-on-surface-dark text-xl mx-4 hover:text-primary-dark'
-        >
-          Components
-        </NavLink>
-        
-      </div>
-      <div>
-        <NavLink to='/' className='text-on-surface-dark text-xl mx-4 hover:text-primary-dark'>
-          CTA
-        </NavLink>
+    // SHOULD USE STICKY OR STH --> ALL ITEMS NEED MARGIN TOP ....
+    <div className="sticky top-0 w-full z-10">
+      <div className="w-full h-auto px-5 shadow-md shadow-surface-dark bg-surface-dark text-center items-center flex justify-between">
+        <div>
+          <NavLink to="/">
+            <img alt='logo' src={Logo} className=" w-14 mt-3" />
+          </NavLink>
+        </div>
+        <div className="">
+          <NavLink
+            to="/home"
+            className="text-on-surface-dark text-md mx-4 hover:text-primary-dark"
+          >
+            Stable
+          </NavLink>
+          <NavLink
+            to="/sandbox"
+            className="text-on-surface-dark text-md mx-4 hover:text-primary-dark"
+          >
+            Sandbox
+          </NavLink>
+        </div>
+        <div>
+          <SubmitButtonNav to='/' text='Home'/>
+        </div>
       </div>
     </div>
   );
